@@ -25,6 +25,12 @@ As this was a local setup for me, the server_name of 'www.mywordpress.local' was
 
 ## Key Points
 
+this 'wordpress'
+```
+proxy_pass http://wordpress;
+```
+refers to the wordpress service in your docker-compose.yml file.
+
 this part in your default.conf:
 ```
         proxy_set_header      Host $host;
